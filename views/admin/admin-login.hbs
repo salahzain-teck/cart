@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="container mt-5 pl-5">
+            <h2 class="text-center">Login</h2>
+
+            <form action="/admin/admin-login" method="post">
+            {{#if loginErr}}
+            <p class="error">Invalid username or password</p>
+            {{/if}}
+                <div class="form-group">
+                    <label>E-mail address</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Enter E-mail">
+                </div>
+
+                <div class="form-control">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" name="Password" placeholder="Password">
+                </div>
+
+               
+                <button type="submit" class="btn-btn-primary float-right">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
